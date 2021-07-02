@@ -1,4 +1,3 @@
-# Note: If someone from PCBeta is reading this, please give me credit in the thread and link this official support thread: https://forums.mydigitallife.net/threads/tool-ezwindslic-easily-activate-windows-7-vista-server-2008-r2-server-2012-r2-on-uefi-gpt.83357/ as I will personally only will be able to provide support there.
 # EzWindSLIC
 An activator for Windows 7 for UEFI-GPT systems, based on WindSLIC but this one is more user friendly.
 [Overview]  
