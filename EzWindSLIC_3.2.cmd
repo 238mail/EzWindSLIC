@@ -11,7 +11,7 @@ pushd "!work!"
     %systemroot%\System32\cscript.exe //nologo "%~nx0?.wsf" //job:ELAV /File:"!work!\%~nx0"
     exit /b
 )
-set "uiver=3.2"
+set "uiver=3.21"
 title EzWindSLIC %uiver% by Exe Csrss
 echo:
 mode con cols=98 lines=34
@@ -38,8 +38,14 @@ for %%# in (powershell.exe) do if [%%~$PATH:#]==[] if not exist "%SystemRoot%\Sy
     pause >nul
     exit /b
 )
-for %%# in (powershell.exe) do if not [%%~$PATH:#]==[] set "_psc="%%~$PATH:#" -nop -c"
-if not defined _psc set "_psc="%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -nop -c"
+for %%# in (powershell.exe) do if not [%%~$PATH:#]==[] (
+   set "_psc="%%~$PATH:#" -nop -c"
+   set "_ps=%%~$PATH:#"
+)
+if not defined _psc (
+   set "_psc="%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -nop -c"
+   set "_ps=%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe"
+)
 :: Set buffer height
 %_psc% "&{$H=get-host;$W=$H.ui.rawui;$B=$W.buffersize;$B.height=250;$W.buffersize=$B;}"
 :: Declare some variables for convenience
@@ -292,7 +298,7 @@ call :dispstat
 
 :createoem
 cls
-for /f "skip=2 tokens=2*" %%G in ('reg query "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders" /v Desktop 2^>nul') do set "desktop=%%H"
+for /f "delims=" %%a in ('%_ps% "& {write-host $([Environment]::GetFolderPath('Desktop'))}"') do Set "desktop=%%a"
 if exist "!desktop!\$OEM$" (
     %_eline%
     echo $OEM$ folder already exists on the desktop.
