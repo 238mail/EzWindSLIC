@@ -8,12 +8,67 @@ If everything went well you should be activated!
 
 Run script again and choose [U]ninstall option to uninstall.
 
+Use the [D]isplay Activation Status option to check activation status.
+
+Use the [C]reate $OEM$ Folder option to create $OEM$ folder which can be placed in source directory of Windows installation media/ISO to preactivate.
+A $OEM$ folder which uses traditional script will be created when traditional script is used to create $OEM$ folder.
+A $OEM$ folder which uses AIO script will be created when AIO script is used to create $OEM$ folder.
+
 Switches:
 /install: Start installation process and skip main menu.
 /uninstall: Start installation process and skip main menu.
 /silent: Used with /install or /uninstall. Don't prompt user for anything and reboot automatically if required.
 /norestart: Meant to be used with /silent. Quit script at the end instead of rebooting automatically.
 /force: Similar to Daz' loader's "Ignore existing SLIC". Install bootloader even if SLIC is present.
+Q: Which operating systems are supported?
+A:
+Windows Vista Starter
+Windows Vista Home Basic
+Windows Vista Home Basic N
+Windows Vista Home Premium
+Windows Vista Business
+Windows Vista Business N
+Windows Vista Ultimate
+Windows 7 Starter
+Windows 7 Starter E
+Windows 7 Home Basic
+Windows 7 Home Premium
+Windows 7 Home Premium E
+Windows 7 Professional
+Windows 7 Professional E
+Windows 7 Ultimate
+Windows 7 Ultimate E
+Windows Server 2008 Foundation
+Windows Server 2008 Standard
+Windows Server 2008 Enterprise
+Windows Server 2008 Enterprise without Hyper-V
+Windows Server 2008 R2 Foundation
+Windows Server 2008 R2 Web
+Windows Server 2008 R2 Standard
+Windows Server 2008 R2 Enterprise
+Windows Server 2008 R2 Datacenter
+Windows Storage Server 2008 Standard
+Windows Storage Server 2008 R2 Essentials
+Windows Small Business Server 2008 Standard
+Windows Small Business Server 2011 Essentials
+Windows Small Business Server 2011 Standard
+Windows Home Server 2011
+Windows Server 2012 Foundation
+Windows Server 2012 Web
+Windows Server 2012 Standard
+Windows Server 2012 Essentials
+Windows Server 2012 Datacenter
+Windows Multi-point Server 2012 Standard
+Windows Multi-point Server 2012 Premium
+Windows Storage Server 2012 Standard
+Windows Storage Server 2012 Workgroup
+Windows Server 2012 R2 Standard
+Windows Server 2012 R2 Datacenter
+Windows Storage Server 2012 R2 Standard
+Windows Server 2016 Standard
+Windows Storage Server 2016 Standard
+Windows Server 2019 Standard
+Windows Server 2019 Datacenter
 
 Q: Which profile belongs to which company?
 A: 
@@ -139,3 +194,10 @@ After that is done, exit cmd and press 'Next' on the setup screen, and then pres
 After a while you should see 'Corrupt boot configuration is detected bla bla bla'. Press 'Repair and restart'.
 
 Your PC should be able to boot again.
+
+[Credits]
+@nononsence (for bootloader and original WindSLIC)
+@FreeStyler for providing OEM:SLP keys used in script
+@Windows_Addict and @abbodi1406 for scripting ideas and great assistance in scripting
+@Sajjo for promoting this tool
+@Tito for moving this to the MDL Projects and Applications forum, stickying it and helping in SLIC detection
