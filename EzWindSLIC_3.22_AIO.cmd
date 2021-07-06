@@ -12,7 +12,7 @@ pushd "!work!"
     %systemroot%\System32\cscript.exe //nologo "%~nx0?.wsf" //job:ELAV /File:"!work!\%~nx0"
     exit /b
 )
-set "uiver=3.21 AIO"
+set "uiver=3.22 AIO"
 set "batf=!work!\%~nx0"
 if not exist "%systemroot%\temp" md "%systemroot%\temp" >nul 2>&1
 if exist "%systemroot%\temp\ezwork" rd "%systemroot%\temp\ezwork" /s /q >nul 2>&1
