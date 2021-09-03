@@ -2,24 +2,32 @@
 Easy to use script that defeats activation on Windows Vista/7 and Server 2008(R2)/2012(R2)/2016/2019 on UEFI-GPT systems using SLIC emulation technique.
 
 [How to]
-Run the script. Press [I]nstall to activate and wait for a few seconds.
+Run the script. Press [I] to activate and wait for a few seconds.
 If prompted, reboot or shutdown.
 If everything went well you should be activated!
 
-Run script again and choose [U]ninstall option to uninstall.
+Run script again and press [U] to uninstall.
 
-Use the [D]isplay Activation Status option to check activation status.
+Press [D] to check activation status.
 
-Use the [C]reate $OEM$ Folder option to create $OEM$ folder which can be placed in source directory of Windows installation media/ISO to preactivate.
+Press [C] to create $OEM$ folder which can be placed in source directory of Windows installation media/ISO to preactivate.
 A $OEM$ folder which uses traditional script will be created when traditional script is used to create $OEM$ folder.
 A $OEM$ folder which uses AIO script will be created when AIO script is used to create $OEM$ folder.
+
+Press [R] to view this read-me document.
+
+Press [G] to open the Github repo of this project.
+
+Press [S] to open the support thread web page of this project.
+
+Press [F] to toggle forceful mode. 
 
 Switches:
 /install: Start installation process and skip main menu.
 /uninstall: Start installation process and skip main menu.
 /silent: Used with /install or /uninstall. Don't prompt user for anything and reboot automatically if required.
 /norestart: Meant to be used with /silent. Quit script at the end instead of rebooting automatically.
-/force: Similar to Daz' loader's "Ignore existing SLIC". Install bootloader even if SLIC is present.
+/force: Similar to Daz' loader's "Ignore existing SLIC". Install bootloader even if SLIC is present. This option also bypasses the error messages received if a SLIC unusable for activation is detected.
 Q: Which operating systems are supported?
 A:
 Windows Vista Starter
@@ -199,5 +207,5 @@ Your PC should be able to boot again.
 @nononsence (for bootloader and original WindSLIC)
 @FreeStyler for providing OEM:SLP keys used in script
 @Windows_Addict and @abbodi1406 for scripting ideas and great assistance in scripting
-@Sajjo for promoting this tool
+@Sajjo for testing this tool
 @Tito for moving this to the MDL Projects and Applications forum, stickying it and helping in SLIC detection
