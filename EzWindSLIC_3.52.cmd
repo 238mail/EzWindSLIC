@@ -497,7 +497,7 @@ set "_clr=0e"
 )
 if [%LicenseStatus%]==[5] (
 set "_licstat=Notification"
-set "_clr=0e"
+set "_clr=0c"
 )
 if [%LicenseStatus%]==[6] (
 set "_licstat=Extended grace period"
