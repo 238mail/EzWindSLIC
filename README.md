@@ -1,5 +1,5 @@
 # EzWindSLIC
-An activator for Windows 7 for UEFI-GPT systems, based on WindSLIC but this one is more user friendly.
+An activator for Windows 7/Vista(SP1+)/Server 2008-2022 for UEFI-GPT systems, based on WindSLIC but this one is more user friendly.  
 [Overview]  
 Easy to use script that defeats activation on Windows Vista/7 and Server 2008(R2)/2012(R2)/2016/2019 on UEFI-GPT systems using SLIC emulation technique.  
   
