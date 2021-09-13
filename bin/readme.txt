@@ -1,5 +1,5 @@
 [Overview]
-Easy to use script that defeats activation on Windows Vista/7 and Server 2008(R2)/2012(R2)/2016/2019 on UEFI-GPT systems using SLIC emulation technique.
+Easy to use script that defeats activation on Windows Vista/7 and Server 2008(R2)/2012(R2)/2016/2019/2022 on UEFI-GPT systems using SLIC emulation technique.
 
 [How to]
 Run the script. Press [I] to activate and wait for a few seconds.
@@ -74,9 +74,17 @@ Windows Server 2012 R2 Standard
 Windows Server 2012 R2 Datacenter
 Windows Storage Server 2012 R2 Standard
 Windows Server 2016 Standard
+Windows Server 2016 Datacenter
+Windows Server 2016 Essentials
 Windows Storage Server 2016 Standard
+Windows Storage Server 2016 Workgroup
+Windows Cloud Storage Server 2016
 Windows Server 2019 Standard
 Windows Server 2019 Datacenter
+Windows Server 2019 Essentials
+Windows Server 2019 Azure Stack HCI
+Windows Server 2022 Standard
+Windows Server 2022 Datacenter
 
 Q: Which profile belongs to which company?
 A: 
